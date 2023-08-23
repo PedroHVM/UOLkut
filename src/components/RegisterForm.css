@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
+*{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
 form{
 
     display: flex;
@@ -8,7 +14,6 @@ form{
     height: 598px;
     border-radius: 16px;
     background: #FDFEFF;
-
 }
 
 .Form_container{
@@ -40,7 +45,6 @@ form{
     border-radius: 8px;
     background: #ED2590;
     color: #FFF;
-    font-family: SF Pro Display;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -51,7 +55,6 @@ form{
 
 ::placeholder{
     color: #868686;
-    font-family: SF Pro Display;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -61,7 +64,6 @@ form{
 
 h2{
 color: #ED2590;
-font-family: SF Pro Display;
 font-size: 24px;
 font-style: normal;
 font-weight: 600;

@@ -1,12 +1,11 @@
 @charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
-
 
 input{
     background-color: #eff3f8 !important;
@@ -15,7 +14,7 @@ input{
 
 
 :root {
-  --pink: #ED2590;
+  --orange: #ED6D25;
   --blue-light: #D9E6F7;
   --dark-light: #4B4B4B;
   --gray: #B4AEAE;
@@ -71,7 +70,7 @@ header div.profile img {
 }
 
 header div.profile:hover {
-  color: #ed2590;
+  color: #ED6D25;
 }
 
 header div.profile div.profile {
@@ -114,7 +113,7 @@ main div.profile div.details {
 }
 
 main div.profile div.details img {
-  border: 4px solid var(--pink);
+  border: 4px solid var(--orange);
   border-radius: 100px;
   width: 170px;
   height: 170px;
@@ -132,7 +131,7 @@ main div.profile div.edit {
   align-items: center;
   justify-content: center;
   background-color: var(--white);
-  color: var(--pink);
+  color: var(--orange);
   width: 280px;
   height: 56px;
   flex-shrink: 0;
@@ -200,8 +199,8 @@ main div.info .emojis .division span.blue {
   color: #26caff;
 }
 
-main div.info .emojis .division span.pink {
-  color: #ed2590;
+main div.info .emojis .division span.or--orange {
+  color: #ED6D25;
 }
 
 main div.info > p {
@@ -218,7 +217,7 @@ main div.info > p > span {
 
 main div.info > p > span.border {
   border-radius: 18px;
-  border: 2px solid var(--pink);
+  border: 2px solid var(--orange);
 }
 
 main div.info > p > span.more {
@@ -227,12 +226,12 @@ main div.info > p > span.more {
 
 main div.info > p > span.all {
   cursor: pointer;
-  color: var(--pink);
+  color: var(--orange);
 }
 
 .all {
   cursor: pointer;
-  color: var(--pink);
+  color: var(--orange);
 }
 
 .all:hover {
@@ -367,8 +366,8 @@ main div.communitys div.img_communitys div.division div {
     color: var(--dark-light);
   }
 
-  header nav a#pink {
-    color: var(--pink);
+  header nav a#or--orange {
+    color: var(--orange);
   }
 
   header div.search {
@@ -510,8 +509,8 @@ main div.communitys div.img_communitys div.division div {
         color: var(--dark-light);
     }
 
-    header nav a#pink{
-        color: var(--pink);
+    header nav a#or--orange{
+        color: var(--orange);
     }
     
     header div.search{

@@ -1,0 +1,106 @@
+.outer-div {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    padding-top: 50px; 
+    padding-bottom: 30px; 
+    padding-left: 5%; 
+    padding-right: 5%; 
+    margin: 0px;
+    background-color:#D9E6F7;
+  }
+  
+.register-two-main-div {
+  max-width: 800px; 
+  width: 100%; 
+  padding: 60px; 
+  background-color: #FDFEFF; 
+  border-radius: 2%;
+  border: 2px solid #ed2590;
+  border-radius: 5px;
+  min-width: 400px; 
+}
+  
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+textarea {
+  background-color: #D9E6F7;
+  border-radius: 8px;
+}
+
+
+.select-input-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  order: 0; 
+  justify-content: flex-end;
+  margin-left: 10%;
+}
+
+.select-input-container > * {
+  margin-bottom: 30px; 
+}
+
+.mid-container{
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 1fr 300px; 
+  gap: 10px; 
+}
+
+@media screen and (max-width: 400px) {
+  .mid-container {
+    flex-direction: column; 
+  }
+}
+
+.fav-s textarea {
+  height: 40px; 
+  scroll-behavior: unset;
+}
+
+.submit-button{
+  display: grid;
+  grid-template-columns: auto auto; 
+  grid-column-gap: 20px; 
+  justify-content: center; 
+  margin-top: 5%;
+} 
+
+.edit-info .textarea-input{
+  font-size: 16px;
+  border: 1px solid #ed2590; 
+  overflow: hidden;
+}
+
+.edit-info {
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+}
+
+.edit-info .textarea-input {
+  border: 1px solid #ed2590; 
+  overflow: hidden;
+  height: 20px; 
+  padding-top: 0px;
+  font-size: small;
+  margin-left: 30px;
+}
+
+#my-button{
+    width: 336px;
+    height: 51px;
+    border-radius: 8px;
+    background: #ED2590;
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

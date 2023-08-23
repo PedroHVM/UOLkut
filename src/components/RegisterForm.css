@@ -1,0 +1,69 @@
+form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 384px;
+    height: 598px;
+    border-radius: 16px;
+    background: #FDFEFF;
+
+}
+
+.Form_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+input{
+    display: block;
+    margin: 10px;
+    width: 336px;
+    height: 51px;
+    border-radius: 8px;
+    background: #EFF3F8;
+    border-style: none;
+   
+}
+form{
+    width: 384px;
+    height: 598px;
+    flex-shrink: 0;
+    border: black;
+}
+
+#submitButton{
+    width: 336px;
+    height: 51px;
+    border-radius: 8px;
+    background: #ED2590;
+    color: #FFF;
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+::placeholder{
+    color: #868686;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 16px;
+    }
+
+h2{
+color: #ED2590;
+font-family: SF Pro Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

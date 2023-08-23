@@ -1,0 +1,614 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "SFDisplay";
+    src: url("./assets/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+    
+}
+
+
+input{
+    background-color: #eff3f8 !important;
+}
+
+ /* @charset "UTF-8"; */
+
+:root {
+  --pink: #ED2590;
+  --blue-light: #D9E6F7;
+  --dark-light: #4B4B4B;
+  --gray: #B4AEAE;
+  --white: #FDFEFF;
+}
+
+body {
+  background-color: var(--blue-light);
+  font-family: "SFDisplay", serif;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--white);
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav {
+  display: none;
+  margin-left: -200px;
+}
+
+header div.profile {
+  cursor: pointer;
+}
+
+header div.search {
+  display: none;
+  margin-right: -230px;
+}
+
+#btnSearch {
+  outline: none;
+}
+
+header div.profile img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 80px;
+  margin-right: 16px;
+}
+
+header div.profile:hover {
+  color: #ed2590;
+}
+
+header div.profile div.profile {
+  display: none;
+}
+
+header div.profile div.profile_active {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+main div.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 80px;
+    text-align: center;
+}
+
+main div.profile div.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  background-color: var(--white);
+  width: 280px;
+  height: 324px;
+  flex-shrink: 0;
+}
+
+main div.profile div.details img {
+  border: 4px solid var(--pink);
+  border-radius: 100px;
+  width: 170px;
+  height: 170px;
+  flex-shrink: 0;
+  padding: 7px;
+}
+
+main div.profile div.details h2 {
+  margin-top: 20px;
+}
+
+main div.profile div.edit {
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  color: var(--pink);
+  width: 280px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+main div.profile div.edit p {
+  cursor: pointer;
+}
+
+main div.profile div.edit p:hover {
+  text-decoration: underline;
+}
+
+main div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 80px;
+    background-color: var(--white);
+    border-radius: 16px;
+}
+
+main div.info h2 {
+  color: #4b4b4b;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+main div.info span#text {
+    font-size: .8em;
+    background-color: #EFF3F8;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main div.info .emojis {
+  margin: 20px 0px;
+}
+
+main div.info .emojis .division {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin: 15px 0px;
+}
+
+main div.info .emojis .division span#star {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+  color: var(--gray);
+}
+
+main div.info .emojis .division span.yellow {
+  color: #facf41;
+}
+
+main div.info .emojis .division span.blue {
+  color: #26caff;
+}
+
+main div.info .emojis .division span.pink {
+  color: #ed2590;
+}
+
+main div.info > p {
+  font-size: 0.9em;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+main div.info > p > span {
+  color: var(--dark-light);
+  margin-left: 10px;
+  padding: 5px;
+}
+
+main div.info > p > span.border {
+  border-radius: 18px;
+  border: 2px solid var(--pink);
+}
+
+main div.info > p > span.more {
+  display: none;
+}
+
+main div.info > p > span.all {
+  cursor: pointer;
+  color: var(--pink);
+}
+
+.all {
+  cursor: pointer;
+  color: var(--pink);
+}
+
+.all:hover {
+  text-decoration: underline;
+}
+
+main div.friends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 80px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+main div.friends > span.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+main div.friends div.profile_friends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+main div.friends div.profile_friends div.division {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+main div.friends div.profile_friends div.division div {
+  text-align: center;
+  padding: 5px;
+}
+
+main div.communitys {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 80px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+main div.communitys > span.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+main div.communitys div.img_communitys {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+main div.communitys div.img_communitys div.division {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+main div.communitys div.img_communitys div.division div {
+  text-align: center;
+  padding: 5px;
+}
+
+
+@media screen and (max-width: 470px) {
+  main div.search {
+    margin: 20px 10px;
+  }
+
+  main div.profile {
+    margin: 20px 10px;
+  }
+
+  main div.info {
+    margin: 20px 10px;
+  }
+
+  main div.friends {
+    margin: 20px 10px;
+  }
+
+  main div.communitys {
+    margin: 20px 10px;
+  }
+
+  main div.friends div.profile_friends div.division {
+    flex-direction: column;
+  }
+
+  main div.communitys div.img_communitys div.division {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (min-width: 1300px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: var(--dark-light);
+  }
+
+  header nav a#pink {
+    color: var(--pink);
+  }
+
+  header div.search {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: #eff3f8;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  header div.search span {
+    cursor: pointer;
+    color: var(--dark-light);
+    font-size: 1.3em;
+  }
+
+  header input#btnSearch {
+    padding: 5px;
+    float: right;
+    background-color: #eff3f8;
+    padding-right: 5px;
+    border: none;
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  header div.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+  }
+
+  header div.profile p.name {
+    display: block;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+  }
+
+  main div.search {
+    display: none;
+  }
+
+  main div.profile {
+    padding: 0px 20px;
+  }
+
+  main div.info {
+    padding: 35px;
+    margin: 20px 0px;
+  }
+
+  main div.info .emojis {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  main div.info > p > span.more {
+    display: inline;
+  }
+
+  div.friends_community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  div.friends {
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 50px;
+  }
+
+  div.communitys {
+    padding: 0;
+    margin: 50px;
+  }
+
+  main div.friends div.profile_friends div.division div img {
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 470px){
+    main div.search{
+        margin: 20px 10px;
+    }
+
+    main div.profile{
+        margin: 20px 10px;
+    }
+
+    main div.info{
+        margin: 20px 10px;
+    }
+
+    main div.friends{
+        margin: 20px 10px;
+    }
+
+    main div.communitys{
+        margin: 20px 10px;
+    }
+
+    main div.friends div.profile_friends div.division{
+        flex-direction: column;
+    }
+
+    main div.communitys div.img_communitys div.division{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
+    header nav a{
+        text-decoration: none;
+        color: var(--dark-light);
+    }
+
+    header nav a#pink{
+        color: var(--pink);
+    }
+    
+    header div.search{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        background-color: #EFF3F8;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    header div.search span{
+        cursor: pointer;
+        color: var(--dark-light);
+        font-size: 1.3em;
+    }
+    
+    header input#btnSearch{
+        padding: 5px;
+        float: right;
+        background-color: #EFF3F8;
+        padding-right: 5px;
+        border: none;
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    header div.profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header div.profile p.name{
+        display: block;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 20px;
+    }
+
+    main div.search{
+        display: none;
+    }
+
+    main div.profile{
+        padding: 0px 20px;
+    }
+
+    main div.info{
+        padding: 35px;
+        margin: 20px 0px;
+    }
+
+    main div.info .emojis{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    main div.info > p > span.more{
+        display: inline;
+    }
+    
+    div.friends_community{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+    }
+
+    div.friends{
+        flex-wrap: nowrap;
+        padding: 0;
+        margin: 50px;
+    }
+
+    div.communitys{
+        padding: 0;
+        margin: 50px;
+    }
+
+    main div.friends div.profile_friends div.division div img{
+        cursor: pointer;
+    }
+} 
+

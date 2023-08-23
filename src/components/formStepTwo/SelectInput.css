@@ -1,0 +1,8 @@
+
+.select-container {
+    margin-bottom: 10px; /* espaço entre o select e o próximo input */
+  }
+
+.select-container > label{
+    margin-right: 10px;
+}

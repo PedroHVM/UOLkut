@@ -1,0 +1,20 @@
+.fav-s textarea {
+
+    resize: none;
+    padding: 5px; /* espaçamento entre o texto e a borda do textbox */
+}
+
+.fav-s {
+    display: grid;
+    grid-template-columns: auto auto; 
+    grid-column-gap: 20px; /* espaçamento entre */
+    justify-content: center; /* alinha os itens */
+    
+}
+
+/* Torna a seção de favoritos responsiva */
+@media screen and (max-width: 500px) {
+    .fav-s {
+      grid-template-columns: 1fr; /* altera para uma coluna */
+    }
+}

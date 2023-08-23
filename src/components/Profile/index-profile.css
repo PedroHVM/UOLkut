@@ -1,22 +1,18 @@
-
+@charset "UTF-8"; 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face{
-    font-family: "SFDisplay";
-    src: url("./assets/fonts/SFPRODISPLAYMEDIUM.OTF") format("opentype");
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
 
 
 input{
     background-color: #eff3f8 !important;
 }
 
- /* @charset "UTF-8"; */
+
 
 :root {
   --pink: #ED2590;
@@ -28,7 +24,7 @@ input{
 
 body {
   background-color: var(--blue-light);
-  font-family: "SFDisplay", serif;
+  font-family: 'Roboto Flex', sans-serif;
 }
 
 html,

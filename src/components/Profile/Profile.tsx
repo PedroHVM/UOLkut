@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './index-profile.css';
 
 const Profile: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Header.css";
-import Logo from "../../assets/image/logo-orkut.svg";
+import "../Profile/index-profile.css";
+
 
 interface HeaderProps {
   isLoggedIn: boolean;
@@ -11,30 +11,43 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn }) => {
     <header className="header">
       <nav>
         <div className="logo">
-          <img src={Logo} alt="Logo Orkut" />
+          <span>UOLkut</span>
         </div>
         <ul>
           {isLoggedIn ? (
             <>
-              <li>Início</li>
-              <li>Perfil</li>
-              <li>Comunidades</li>
-              <li>Jogos</li>
-              <input className="header-input" type="text" placeholder="Pesquisar no Orkut" />
+            <div className="header-1">
+              <li>
+                <a href="#">Início</a>
+              </li>
+              <li>
+                <a href="../Profile">Perfil</a>
+              </li>
+              <li>
+                <a href="#">Comunidades</a>
+              </li>
+              <li>
+                <a href="#">Jogos</a>
+              </li>
+            </div>
+          <div className="header-2">
+          <input className="header-input" type="text" placeholder="Pesquisar no UOLkut" />
               <div className="profile">
         <img src="./images/user-image.jpeg" alt="profile image"/>
         <p className="name">Iuri Silva</p>
         <span className="material-symbols-outlined">
           expand_more
         </span>
+          </div>
+              
       </div>
             </>
           ) : (
             <>
-              <li>Sobre o Orkut</li>
-              <li>Centro de Segurança</li>
+              <li className="C-seg">Centro de Segurança</li>
             </>
           )}
+          
         </ul>
       </nav>
     </header>

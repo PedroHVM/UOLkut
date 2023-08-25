@@ -10,16 +10,16 @@ interface LoginState {
 }
 
 interface LoginProps {
-    onLoginSuccess: () => void;
-  }
+  onLoginSuccess: () => void;
+}
 
-  const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
-    const navigate = useNavigate();
-    const [loginState, setLoginState] = useState<LoginState>({
-      email: '',
-      password: '',
-      errorMessages: { email: '', password: '' },
-    });
+const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
+  const navigate = useNavigate();
+  const [loginState, setLoginState] = useState<LoginState>({
+    email: '',
+    password: '',
+    errorMessages: { email: '', password: '' },
+  });
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -44,45 +44,64 @@ interface LoginProps {
     if (errorMessages.email || errorMessages.password) {
       setLoginState({ ...loginState, errorMessages });
     } else {
-      alert('Carregando...');
       navigate('/profile');
       onLoginSuccess();
     }
   };
 
   return (
+    <>
+      <div className='components'>
+        <div className='ilustration'>
+          <img src="/images/banner.png" alt="" />
+          <p>Conecta-se aos seus amigos e familiares <br /> usando recados e mensagens instantâneas</p>
+        </div>
+        <div className="login-container">
+          <img src="/images/ps_orkut.png" alt="" />
+          <h1>Acesse o UOLkut</h1>
+          <div className="form-group">
+            <input
+              type="text"
+              name="email"
+              placeholder='E-mail'
+              value={loginState.email}
+              onChange={handleChange}
+              className={loginState.errorMessages.email ? 'error' : ''}
+            />
+            {loginState.errorMessages.email && (
+              <span className="error-message">{loginState.errorMessages.email}</span>
+            )}
+          </div>
+          <div className="form-group">
+            <input
+              type="password"
+              name="password"
+              placeholder='Senha'
+              value={loginState.password}
+              onChange={handleChange}
+              className={loginState.errorMessages.password ? 'error' : ''}
+            />
+            {loginState.errorMessages.password && (
+              <span className="error-message">{loginState.errorMessages.password}</span>
+            )}
+          </div>
 
-    <div className="login-container">
-      <h1>Login</h1>
-      <div className="form-group">
-        <input
-          type="text"
-          name="email"
-          placeholder='E-mail'
-          value={loginState.email}
-          onChange={handleChange}
-          className={loginState.errorMessages.email ? 'error' : ''}
-        />
-        {loginState.errorMessages.email && (
-          <span className="error-message">{loginState.errorMessages.email}</span>
-        )}
-      </div>
-      <div className="form-group">
-        <input
-          type="password"
-          name="password"
-          placeholder='Senha'
-          value={loginState.password}
-          onChange={handleChange}
-          className={loginState.errorMessages.password ? 'error' : ''}
-        />
-        {loginState.errorMessages.password && (
-          <span className="error-message">{loginState.errorMessages.password}</span>
-        )}
-      </div>
-      <button onClick={handleLogin}>Entrar na Conta</button>
-    </div>
+          <label>
+            <input type="checkbox" />
+            Lembrar senha
+          </label>
 
+          <ul className='options'>
+            <button onClick={handleLogin}>Entrar</button>
+            <button>Criar conta</button>
+          </ul>
+        </div>
+      </div>
+      <footer className='footer'>
+        <p>Todos os direitos reservados</p>
+      </footer>
+
+    </>
   );
 };
 

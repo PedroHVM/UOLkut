@@ -1,19 +1,20 @@
 @charset "UTF-8"; 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 input{
     background-color: #eff3f8 !important;
 }
 
-
-
-:root {
+:root { 
   --orange: #ED6D25;
   --blue-light: #D9E6F7;
   --dark-light: #4B4B4B;
@@ -23,7 +24,6 @@ input{
 
 body {
   background-color: var(--blue-light);
-  font-family: 'Roboto Flex', sans-serif;
 }
 
 html,
@@ -43,22 +43,49 @@ header {
   align-items: center;
 }
 
-header nav {
-  display: none;
-  margin-left: -200px;
+.header-1{
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
-header div.profile {
+.header-2{
+  margin-left: 442px;
+  display: flex ;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
   cursor: pointer;
 }
 
-header div.search {
-  display: none;
-  margin-right: -230px;
+.header-input {
+  background: url('../../assets/image/MagnifyingGlass.svg') no-repeat scroll 7px 7px;
+  border: none;
+  padding: 5px;
+  width: 355px;
+  height: 44px;
+  padding-left: 40px;
 }
 
-#btnSearch {
-  outline: none;
+header div.logo span {
+  color: #ED6D25;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  width: 124px;
+  height: 27px;
 }
 
 header div.profile img {
@@ -82,6 +109,10 @@ header div.profile div.profile_active {
   align-items: center;
   gap: 10px;
   padding-top: 10px;
+}
+
+header .C-seg {
+  margin-left: 935px;
 }
 
 main {
@@ -123,6 +154,7 @@ main div.profile div.details img {
 
 main div.profile div.details h2 {
   margin-top: 20px;
+  color: #4B4B4B;
 }
 
 main div.profile div.edit {
@@ -135,14 +167,26 @@ main div.profile div.edit {
   width: 280px;
   height: 56px;
   flex-shrink: 0;
-}
-
-main div.profile div.edit p {
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
 }
 
-main div.profile div.edit p:hover {
-  text-decoration: underline;
+main div.profile div.edit:hover {
+  background-color: #ED6D25; 
+  color: var(--white);
+}
+
+.profile a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ED6D25;
+}
+
+.profile a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 main div.info {
@@ -153,6 +197,9 @@ main div.info {
     margin: 20px 80px;
     background-color: var(--white);
     border-radius: 16px;
+    width: 592px;
+    height: 854px;
+    flex-shrink: 0;
 }
 
 main div.info h2 {
@@ -247,6 +294,9 @@ main div.friends {
   margin: 20px 80px;
   background-color: var(--white);
   border-radius: 10px;
+  width: 280px;
+  height: 411px;
+  flex-shrink: 0;
 }
 
 main div.friends > span.title {
@@ -288,6 +338,9 @@ main div.communitys {
   margin: 20px 80px;
   background-color: var(--white);
   border-radius: 10px;
+  width: 280px;
+  height: 411px;
+  flex-shrink: 0;
 }
 
 main div.communitys > span.title {
@@ -466,6 +519,9 @@ main div.communitys div.img_communitys div.division div {
 
 
 @media screen and (max-width: 470px){
+    .header {
+      width: 100%;
+    }
     main div.search{
         margin: 20px 10px;
     }
@@ -496,6 +552,9 @@ main div.communitys div.img_communitys div.division div {
 }
 
 @media screen and (min-width: 1300px){
+  .header{
+    width: 100%;
+  }
     header nav{
         display: flex;
         flex-direction: row;

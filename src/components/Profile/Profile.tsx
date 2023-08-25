@@ -1,19 +1,27 @@
 import React from 'react';
 import './index-profile.css';
+import { useNavigate } from 'react-router-dom';
 
 const Profile: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleEditProfile = () => {
+    navigate('../edit_profile/newEditProfile.tsx'); 
+  };
+
   return (
     <main>
       <div className="profile">
         <div className="details">
           <img src="./images/user-image.jpeg" alt="profile image" />
-          <h2>Iuri Silva</h2>
+          <h2>Pedro Malheiros</h2>
           <p>Solteiro, Brasil</p>
         </div>
-
-        <div className="edit">
-          <p>Edit my profile</p>
-        </div>
+        <a href="./newEditProfile.tsx">
+        <div className="edit" onClick={handleEditProfile}>
+        Editar perfil
+      </div>
+        </a>
       </div>
 
       <div className="info">
@@ -59,10 +67,10 @@ const Profile: React.FC = () => {
 
             <span>
               <p>Sexy</p>
-              <span className="material-symbols-outlined pink">
+              <span className="material-symbols-outlined orange">
                 favorite
               </span>
-              <span className="material-symbols-outlined pink">
+              <span className="material-symbols-outlined orange">
                 favorite
               </span>
             </span>
@@ -107,7 +115,7 @@ const Profile: React.FC = () => {
             <div className="division">
               <div className="profile_friend">
                 <img src="images/friends/unsplash_2EGNqazbAMk.png" alt="pic_friend" />
-                <p>Fernando</p>
+                <p>João</p>
               </div>
               <div className="profile_friend">
                 <img src="images/friends/unsplash_3TLl_97HNJo.png" alt="pic_friend" />

@@ -5,7 +5,7 @@ import Login from '../src/components/Login/Login';
 import Profile from '../src/components/Profile/Profile'; 
 import Header from './components/Header/Header';
 import FormStepTwo from './components/formStepTwo/formStepTwo';
-import EditProfile from './components/formStepTwo/EditProfile'; 
+import NewEditProfile from './components/edit_profile/newEditProfile';
 import RegisterForm from './components/RegisterForm';
 
 
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Login onLoginSuccess={handleLoginSuccess} />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/editprofile" element={<EditProfile />} />
+          <Route path="/newEditProfile" element={<newEditProfile />} />
           <Route path="/registertwo" element={<FormStepTwo />} />
           <Route path="/RegisterForm" element={<RegisterForm/>} />
 

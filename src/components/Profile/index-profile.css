@@ -49,6 +49,15 @@ header {
   justify-content: space-between;
 }
 
+.header-1 li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav .header-1 a:hover{
+  color: #ED6D25;
+}
+
 .header-2{
   margin-left: 442px;
   display: flex ;
@@ -64,10 +73,6 @@ nav ul {
   align-items: center;
 }
 
-nav li {
-  margin-right: 20px;
-  cursor: pointer;
-}
 
 .header-input {
   background: url('../../assets/image/MagnifyingGlass.svg') no-repeat scroll 7px 7px;
@@ -76,6 +81,7 @@ nav li {
   width: 355px;
   height: 44px;
   padding-left: 40px;
+  margin-right: 25px;
 }
 
 header div.logo span {
@@ -157,7 +163,7 @@ main div.profile div.details h2 {
   color: #4B4B4B;
 }
 
-main div.profile div.edit {
+main div.profile button.edit {
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -173,7 +179,7 @@ main div.profile div.edit {
   text-decoration: none;
 }
 
-main div.profile div.edit:hover {
+main div.profile button.edit:hover {
   background-color: #ED6D25; 
   color: var(--white);
 }

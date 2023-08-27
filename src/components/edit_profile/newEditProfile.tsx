@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import "./editProfile.css";
-import DatePicker from "react-datepicker";
+
 
 import "react-datepicker/dist/react-datepicker.css";
 
-type DateType = Date | null;
+
 
 const NewEditProfile = () => {
   const navigate = useNavigate();
-  const [selectedDate, setSelectedDate] = useState<DateType>(null);
+  const [selectedDate, setSelectedDate] = useState("");
 
-  const handleDateChange = (date: DateType) => {
-    setSelectedDate(date);
+  const handleDateChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setSelectedDate(e.target.value);
   };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
 
-    navigate("/registertwo");
+    navigate("/Profile");
 };
 
 return (
@@ -26,13 +26,13 @@ return (
     <div className="Profile_picture_area">
       <div className="Profile_picture">
         <img
-          src="profilePictureNull.jpg"
+          src="/images/profilePictureNull.jpg"
           alt="Foto de Perfil"
           className="profile-img"
         />
       </div>
       <img
-        src="Mode-edit.png"
+        src="/images/Mode-edit.png"
         alt="Editar Foto de Perfil"
         className="edit-img"
       />
@@ -65,12 +65,11 @@ return (
           <input type="text" id="country" placeholder="País" />
         </label>
         <label htmlFor="birth-date">
-          <DatePicker
-            selected={selectedDate}
+          <input
+          type="date"
             onChange={handleDateChange}
-            dateFormat="dd/MM/yyyy"
-            placeholderText="DD/MM/AAAA"
-          />
+            value={selectedDate}
+            />
         </label>
         <label htmlFor="password">
           <input type="password" id="password" placeholder="Senha" />

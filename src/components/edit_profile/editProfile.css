@@ -8,7 +8,9 @@
 .Edit_profile {
   display: flex;
   align-items: flex-start;
+  margin-left: 200px;
 }
+
 .Form_container {
   display: flex;
   flex-direction: column;
@@ -19,7 +21,7 @@
   margin-bottom: 60px;
   padding: 26px;
   background-color: #FDFEFF;
-  margin-left: 20px; /* Ajuste o valor conforme necessário */
+  margin-left: 20px; 
   border-radius: 16px;
 }
 
@@ -78,9 +80,9 @@
 }
 
 .row {
-  display: flex; /* Alinhar elementos horizontalmente */
-  align-items: center; /* Centralizar verticalmente */
-  gap: 100px; /* Espaçamento entre os elementos */
+  display: flex; 
+  align-items: center;
+  gap: 100px;
 }
 
 .relationship-selector {

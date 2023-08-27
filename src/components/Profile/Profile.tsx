@@ -6,7 +6,7 @@ const Profile: React.FC = () => {
   const navigate = useNavigate();
 
   const handleEditProfile = () => {
-    navigate('../edit_profile/newEditProfile.tsx'); 
+    navigate('/newEditProfile');
   };
 
   return (
@@ -17,11 +17,13 @@ const Profile: React.FC = () => {
           <h2>Pedro Malheiros</h2>
           <p>Solteiro, Brasil</p>
         </div>
-        <a href="./newEditProfile.tsx">
-        <div className="edit" onClick={handleEditProfile}>
-        Editar perfil
-      </div>
-        </a>
+
+        <div>
+          <button className="edit" onClick={handleEditProfile}>
+            Editar meu perfil
+          </button>
+        </div>
+
       </div>
 
       <div className="info">
@@ -126,7 +128,7 @@ const Profile: React.FC = () => {
                 <p>Marcos</p>
               </div>
             </div>
-        
+
             <div className="division">
               <div className="profile_friend">
                 <img src="images/friends/unsplash_iFgRcqHznqg.png" alt="pic_friend" />

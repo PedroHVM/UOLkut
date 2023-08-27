@@ -1,55 +1,43 @@
 .components {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
-.ilustration {
-  padding: 20px;
-  text-align: center;
+  gap: 30px;
+  margin-top: 119px;
 }
 
 .ilustration img{
-  width: 50%; 
-  height: 50%;
+  width: 800px;
+  height: 598px;
+  flex-shrink: 0;
   position: relative;
-  display: inline-block;
-  border-radius: 16px;
-  background: linear-gradient(189deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%);
 }
-
 .ilustration p {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-85%, 250%); 
-  color: white; 
-  padding: 10px;
   color: #FFF;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-align: left;
+  text-align: start;
+  top: 700px;
+  left: 350px;
 }
 
 .login-container {
   width: 384px;
   height: 598px;
   flex-shrink: 0;
-  flex: 1;
-  padding: 20px; 
-  text-align: center;
-  border-left: 1px solid #ccc;
   border-radius: 16px;
   background: #FDFEFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-left: 10px;
-  margin-right: 100px;
 }
-  
-  h1 {
+
+.login-container img{
+  margin-top: 40px;
+}
+
+  .login-container h1 {
     margin-bottom: 20px;
     color: #ED6D25;
   }
@@ -58,6 +46,15 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    align-items: center;
+  }
+
+  .form-group input[type="text"] {
+    border-radius: 8px;
+    background: #EFF3F8;
+    width: 336px;
+    height: 51px;
+    flex-shrink: 0;
   }
   
   label {
@@ -81,14 +78,50 @@
     margin-top: 5px;
   }
   
+  .checkbox label {
+    color: #868686;
+    font-family: Roboto Flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  .checkbox input {
+    display: none;
+  }
+
+  .checkbox input + label:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    border: 2px solid #ED6D25;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .checkbox input:checked + label:before {
+    color: #ED6D25;
+  }
+  .checkbox{
+    margin-bottom: 20px;
+  }
+
   button {
     padding: 10px 15px;
-    background-color: #FDFEFF;
+    background: #EFF3F8;
     color: #ED6D25;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 336px;
+    height: 51px;
+    flex-shrink: 0;
+    align-self: center ;
   }
   
   button:hover {
@@ -99,7 +132,18 @@
   .options {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .forgot {
+    margin-top: 30px;
+    color: #ED6D25;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: pointer;
   }
 
   .footer{

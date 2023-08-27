@@ -48,16 +48,20 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
       onLoginSuccess();
     }
   };
+  
+  const handleRegister = () => {
+    navigate('/RegisterFormOne');
+  };
 
   return (
     <>
       <div className='components'>
         <div className='ilustration'>
-          <img src="/images/banner.png" alt="" />
+          <img src="/images/banner.png" alt="Ilustration" />
           <p>Conecta-se aos seus amigos e familiares <br /> usando recados e mensagens instantâneas</p>
         </div>
         <div className="login-container">
-          <img src="/images/ps_orkut.png" alt="" />
+          <img src="/images/ps_orkut.png" alt="UOLkut logo" />
           <h1>Acesse o UOLkut</h1>
           <div className="form-group">
             <input
@@ -86,15 +90,16 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
             )}
           </div>
 
-          <label>
-            <input type="checkbox" />
-            Lembrar senha
-          </label>
+          <div className='checkbox'>
+            <input type="checkbox" className='Remind'/>
+            <label htmlFor="Remind">Lembrar senha</label>
+          </div>
 
           <ul className='options'>
             <button onClick={handleLogin}>Entrar</button>
-            <button>Criar conta</button>
+            <button onClick={handleRegister}>Criar conta</button>
           </ul>
+              <p className='forgot'>Esqueci minha senha</p>
         </div>
       </div>
       <footer className='footer'>

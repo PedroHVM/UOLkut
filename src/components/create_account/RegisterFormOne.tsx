@@ -8,13 +8,13 @@ export const RegisterFormOne = () => {
     <div className="main_container">
 
       <div className="side_form">   
-        <img src="/img2.jpg" alt="" className="side_pic"/>
+        <img src="/images/banner.png" alt="" className="side_pic"/>
       </div>
       <div className="form_container">
         
         <form>
 
-        <img src="/imgLogo.png" alt="" />
+        <img src="/images/ps_orkut.png" alt="" />
          
           <h2>Cadastre-se na UOLKut</h2>
 

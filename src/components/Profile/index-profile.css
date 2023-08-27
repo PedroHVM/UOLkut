@@ -15,6 +15,7 @@ input{
 }
 
 :root { 
+  --pink: #df22c6;
   --orange: #ED6D25;
   --blue-light: #D9E6F7;
   --dark-light: #4B4B4B;
@@ -161,6 +162,7 @@ main div.profile div.details img {
 main div.profile div.details h2 {
   margin-top: 20px;
   color: #4B4B4B;
+  padding-left: 0%;
 }
 
 main div.profile button.edit {
@@ -214,6 +216,7 @@ main div.info h2 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding-left: 0%;
 }
 
 main div.info span#text {
@@ -252,8 +255,8 @@ main div.info .emojis .division span.blue {
   color: #26caff;
 }
 
-main div.info .emojis .division span.or--orange {
-  color: #ED6D25;
+main div.info .emojis .division span.pink {
+  color: #df22c6;
 }
 
 main div.info > p {
@@ -320,6 +323,7 @@ main div.friends div.profile_friends {
   justify-content: center;
   align-items: center;
   margin: 10px auto;
+  
 }
 
 main div.friends div.profile_friends div.division {

@@ -24,7 +24,7 @@ const App: React.FC = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/newEditProfile" element={<NewEditProfile />} /> 
           <Route path="/registertwo" element={<FormStepTwo />} />
-          <Route path="/RegisterForm" element={<RegisterFormOne/>} />
+          <Route path="/RegisterFormOne" element={<RegisterFormOne/>} />
         </Routes>
       </div>
     </Router>

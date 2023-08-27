@@ -69,10 +69,10 @@ const Profile: React.FC = () => {
 
             <span>
               <p>Sexy</p>
-              <span className="material-symbols-outlined orange">
+              <span className="material-symbols-outlined pink">
                 favorite
               </span>
-              <span className="material-symbols-outlined orange">
+              <span className="material-symbols-outlined pink">
                 favorite
               </span>
             </span>

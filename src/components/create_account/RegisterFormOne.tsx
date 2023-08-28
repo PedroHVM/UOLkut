@@ -7,58 +7,55 @@ export const RegisterFormOne = () => {
   return (
     <div className="main_container">
 
-      <div className="side_form">   
-        <img src="/images/banner.png" alt="" className="side_pic"/>
+      <div className='ilustration'>
+        <img src="/images/banner.png" alt="Ilustration" />
+        <p>Conecta-se aos seus amigos e familiares <br /> usando recados e mensagens instantâneas</p>
       </div>
       <div className="form_container">
-        
-        <form>
-
         <img src="/images/ps_orkut.png" alt="" />
-         
-          <h2>Cadastre-se na UOLKut</h2>
-
+        <h1>Cadastre-se na UOLKut</h1>
+        <div className='mail'>
           <label>
             <input type="text" placeholder="Email" />
           </label>
-
           <label>
             <input type="password" placeholder="Senha" />
           </label>
-
           <label>
             <input type="name" placeholder="Nome" />
           </label>
-
-         
-    <div className="input_row">
-         <label>
-            <input type="text" placeholder="Nascimento" />
-          </label>
-        <label>
-            <input type="text" placeholder="Profissão" />
-          </label>
-
-         
-    </div>
-          
-        <div className="input_row">
-        <label>
-            <input type="text" placeholder="Pais" />
-          </label>
-        <label>
-            <input type="text" placeholder="Cidade" />
-          </label>
-         
         </div>
-        <label htmlFor="">
-            <input type="" placeholder="Relacionamento" />
+        <div className='rows'>
+          <div className="input_row">
+            <label>
+              <input type="date" placeholder="Nascimento" />
+            </label>
+            <label>
+              <input type="text" placeholder="Profissão" />
+            </label>
+          </div>
+          <div className="input_row">
+            <label>
+              <input type="text" placeholder="Pais" />
+            </label>
+            <label>
+              <input type="text" placeholder="Cidade" />
+            </label>
+          </div>
+        </div>
+        <div className="relationship-select">
+          <label htmlFor="relationship">
+            <select id="relationship">
+              <option value="">Relacionamento</option>
+              <option value="solteiro">Solteiro</option>
+              <option value="casado">Casado</option>
+              <option value="viuvo">Viúvo</option>
+            </select>
           </label>
-         
-          <input type="submit" value="Criar conta" id="submitButton" />
-
-          { <input type="submit" value="Cadastrar" id="submitButton" onClick={() => navigate("/registertwo")} /> }
-        </form>
+        </div>
+        <button onClick={() => navigate("/registertwo")}>
+          Criar conta
+        </button>
       </div>
     </div>
   );

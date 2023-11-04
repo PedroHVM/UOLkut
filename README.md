@@ -49,8 +49,8 @@ Divirta-se explorando o UOLkut e conectando-se com pessoas de todo o mundo! Seja
 - Visual Studio Code;
 - TypeScript;
 - javaScript;
-- React
-- HTMl;
+- React;
+- HTML;
 - CSS.
 
 ## Rodando os testes
